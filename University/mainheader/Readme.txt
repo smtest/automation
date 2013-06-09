@@ -1,7 +1,8 @@
 This directory contains two test suits.
 To run a suit execute 'start.js' file in command line as a casperjs file.
 
-The purpose of these test suites is to verify that main links and children links.
+The purpose of these test suites is to verify that main links and children links are in correct postion, text is wrapping,
+size of the font is correct, detect missing and new links.
 JS files in the suit my contain one or more test cases.
 
 Description of files in the suite:
