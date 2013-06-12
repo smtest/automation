@@ -1,0 +1,21 @@
+SYSTEM TESTING
+
+Perform test steps of new hardware installation for every printer.
+Monitor server’s activities on interface window.
+
+Test step 1. Save empty massage 001 and push Reqest pushbutton.
+Expected result: Printer was connected to the server and disconnected after 30 sec
+Test step 2. Save '1' in massage 001 and push Reqest pushbutton.
+Expected result: Printer was connected to the sever, print message was sent to the printer and printer was disconnected after 30 sec. Message 001 was updated with print message 
+Test step 3: Push Request pushbutton.
+Expected result: Printer was connected to the server and disconnected after 30 sec. Message 001 was not updated. This ensured that pushing Request button accidentally would not change message 001 while it’s being printed
+Test step 4: Save '10' in massage 001 and push Reqest pushbutton.
+Expected result: This number was not in database. Printer was connected to the sever, “NOT FOUND” was sent to the printer and printer was disconnected after 30 sec. Message 001 was updated with “NOT FOUND”
+Test step 5: Save '125' in massage 001 and push Reqest pushbutton.
+Expected result: This print message contains logo. Message 001 was updated with print message. Verify that logos were displayed correctly on printer’s screen
+Test step 6: Close server application.
+Expected result: Verify that there was no open Excel application in Windows Task Manager\Processes
+Test step 7: Disconnect network drive containing print message database file
+Expected result: Verify that error message was displayed while trying to open the file. 
+Test step 8: Open log file
+Expected result: Verify that log file was getting updated.

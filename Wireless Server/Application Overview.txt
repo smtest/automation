@@ -1,0 +1,28 @@
+SERVER APPLICATION OVERVIEW
+
+I used Multi-user TCP chat application as a template for developing printers’ server software. 
+
+Printers’ server software consists of server application and client application. Server application was design to perform following functions:
+-	Listen for active TCP connections initiated by printers
+-	Accept TCP connections and start client application for each connection
+-	Request print message number from connected printer through client application
+-	Receive and analyze print message number and pass it to client application
+-	Receive print message from client application and prepare it for sending to connected printer
+-	Close connections
+-	Handle events raised in client application
+-	Handle errors
+-	Provide visual display of system’s activity 
+
+Client application was designed to perform following functions:
+-	Send and receive data between application and connected printer
+-	Build string from received bytes
+-	Locate print message in database file and modify it if needed
+-	Return print message to server application
+
+These were parameters that could be changed if needed without modifications to the programming code. I collected these parameters into initialization text file. Printers’ server software contains code to read these parameters, which are:
+-	Location of print message database file
+-	Worksheet number of the Microsoft Excel file where print message database resigns
+-	Location of logging text file
+-	Text used as identifier for printing logos, special characters and sequential product length marks
+
+And finally, printers’ server software contains code to record printers’ server network activity for future reference. This information is recorded in text file.
