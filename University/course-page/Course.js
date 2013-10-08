@@ -1,4 +1,3 @@
-
 exports.createCasperjsCourse = function (casper){
 // things to improve.
 // capture errors on the page (too many char in name, etc.) and echo while exiting;
@@ -6,6 +5,7 @@ exports.createCasperjsCourse = function (casper){
 // add assertion on assistant's name and webpage box text when not entered in first verification
 // pass found no empty boxes msg multiple times, make one time
 // change text in final assertTitle msg
+//test 
 
 	casper.then(createPage);
 	
