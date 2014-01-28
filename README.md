@@ -1,6 +1,6 @@
 Description
 ==========
 
-This repository is a collection of automated testing scripts. Its main purposes is to demonstrate author's experience
-with automated testing and programming in general. The scripts are made for real time projects unless specified otherwise.
-All sensitive information was removed so scripts may give errors when ran.
+This repository is a collection of automated testing scripts and projects. Its main purposes is to demonstrate author's experience
+with developing scripts and programming in general. The scripts are made for real life projects unless specified otherwise.
+All cusmtomer related information was removed.
